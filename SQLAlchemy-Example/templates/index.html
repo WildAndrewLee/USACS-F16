@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       {% for x in range(my_variable) %}
+        <p id class onclick data-test>Hello.</p>
+       {% endfor %}
+       {% if logged_in %}
+        log out
+        {% else %}
+        log in
+        register
+       {% endif %}
+       {% for player in players %}
+       Name: {{ player.name }}
+       <br />
+       Age: {{ player.age }}
+       <br />
+       Win/Lose Ratio: {{ player.wins / player.loses }}
+       {% endfor %}
+       <script>
+       var num_players = {{ players | len }};
+       document.write('There are ' + num_players + ' player(s) in the database.');
+       document.querySelector('#ele');
+       $('#ele')
+
+       document.getElementByid('ele');
+       document.querySelectorAll('.class .classes')
+
+       x = document.getEleementsByClass('class');
+       x[0].getElementsByClass('classes')
+
+       $('.class .classes').text('hello')
+       $('.class .classes').forEach(function(){
+            $(this).text($(this).text().toUpperCase());
+            $(this).text('hello');
+            $(this).append(
+                $('<div>').text('hello')
+            );
+
+            $(this).remove();o
+            $(this).empty()
+            after
+            before
+
+            css({
+                'width': '100%'
+            })
+
+       });
+
+       .attr('disabled', true)
+       .prop('disabled', true)
+       </script>
+       <style>
+       blah
+       </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       <button id="red">red</button>
+       <button id="blue">blue</button>
+
+       <script>
+        $('#red').click(function(){
+            $('body').css({
+                'background': 'red'
+            });
+        });
+
+        $('#blue').click(function(){
+            $('body').css('background', 'blue');
+        });
+       </script>
+    </body>
+</html>

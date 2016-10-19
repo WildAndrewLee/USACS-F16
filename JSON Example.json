@@ -1,0 +1,13 @@
+{
+    "example_key": "example_value",
+    "number_key": 1,
+    "boolean_key": false,
+    "null_key": null,
+    "array_key": [
+        {
+            "object_key": {
+                "test": "things"
+            }
+        }
+    ]
+}
